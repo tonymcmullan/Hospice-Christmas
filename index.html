@@ -464,7 +464,37 @@ const tracks = [
     url: "https://www.dropbox.com/scl/fi/93pnde9ir9jtcx25ktct1/23-Merry-Christmas-Everyone.mp3?rlkey=nv5kckyvck97944h5kwqz94n4&raw=1"
   }
 ];
+const artistNames = [
+  "Lyrics Stephanie O’Neill – Arr. Tony McMullan",
+  "Tony McMullan",
+  "Kevin Kearney",
+  "Budley Lavery",
+  "Maurice McMullan",
+  "Janeen Withers",
+  "Kyla & Nicole Fox",
+  "Kevin Kearney",
+  "Tony McMullan",
+  "Tommy Coleman",
+  "Maurice McMullan",
+  "Hannah Watts",
+  "Tommy Coleman",
+  "Meadhbh McGrail",
+  "Clan na Gael Ballad Group",
+  "Tommy Coleman",
+  "Tony McMullan",
+  "Janeen Withers",
+  "Sharon Henderson",
+  "Bunion McGibbon",
+  "Ethan McParland",
+  "Tony McMullan",
+  "Tony McMullan"
+];
 
+tracks.forEach((track, index) => {
+  track.artist = artistNames[index];
+});
+
+tracks[21].title = "22 Merry Christmas Everybody";
 
 let currentTrack = 0;
 let autoplayWhenReady = false;
